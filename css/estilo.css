@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+ * {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+ }
+
+ body {
+     font-family: "Trebuche MS", Helvetica, sans-serif;
+     background: #fff url(../imagens/fundo.png) repeat-x;
+ }
+
+ #container {
+     width: 750px;
+     margin: 0 auto;
+ }
+
+ #cabecalho {
+     height: 150px;  
+     padding-top: 25px;
+     background: url(../imagens/detalhe-topo.png) no-repeat right top;
+ }
+
+ #cabecalho .logo {
+    background: url(../imagens/logo.png) no-repeat center;
+    height: 66px;
+    width: 152px;
+    text-indent: -3000px;
+ }
+
+ #menu ul {
+     background-color: #b10333;
+     margin-top: 30px;
+     width: 650px;
+     float: left;
+ }
+
+ #menu ul li {
+     float: left;
+ }
+
+ #menu ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    background: url(../imagens/divisor.png) no-repeat left center;
+ }
+
+ #menu ul .primeiro a {
+     background: none;
+ }
+
+ #menu ul a:hover {
+     color: #69001d;
+ }
+
+ body.home #menu a#home,
+ body.brasil #menu a#brasil,
+ body.internacional #menu a#internacional,
+ body.fotos #menu a#fotos
+   {
+     color: #fff;
+     background-color: #de003e;
+     cursor: text;
+ }
+
+ #principal {
+     border: 1px solid red;
+     display: flex;
+     flex-direction: row-reverse;
+     margin-top: 60px;
+     background-color: #f5f5f5;
+ }
+
+ #uma-coluna #conteudo-principal {
+    width: 750px;
+}
+
+#duas-colunas #conteudo-principal {
+    width: 590px;
+}
+
+ #tres-colunas #conteudo-principal {
+     width: 270px;
+     margin-right: 15px;
+ }
+
+ #conteudo-secundario {
+     order: -1;
+     width: 270px;
+ }
+
+ #menu-lateral {
+    width: 180px;
+    margin-right: 15px;
+}
+
+.caixa {
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.caixa-conteudo {
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+h2 {
+    background-color: #294c71;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#rodape {
+    text-align: center;
+    background-color: #294c71;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#rodape p {
+    color: white;
+}
