@@ -58,6 +58,15 @@
      color: #69001d;
  }
 
+ a:link, a:visited {
+     color: #b10333;
+     padding: 2px;
+ }
+
+ a:hover {
+     color: #e50040;
+ }
+
  body.home #menu a#home,
  body.brasil #menu a#brasil,
  body.internacional #menu a#internacional,
@@ -69,7 +78,6 @@
  }
 
  #principal {
-     border: 1px solid red;
      display: flex;
      flex-direction: row-reverse;
      margin-top: 60px;
@@ -81,7 +89,7 @@
 }
 
 #duas-colunas #conteudo-principal {
-    width: 590px;
+    width: 555px;
 }
 
  #tres-colunas #conteudo-principal {
@@ -94,7 +102,7 @@
      width: 270px;
  }
 
- #menu-lateral {
+ #lateral {
     width: 180px;
     margin-right: 15px;
 }
@@ -116,6 +124,110 @@ h2 {
     color: #fff;
     font-size: 1em;
     padding: 5px;
+}
+
+h3.destaque {
+    background-color: #B10333;
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+h3{
+    display: inline;
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.destaque h3 {
+    background-color: #b10333;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.entrevista h3 {
+    background-color: #de003e;
+    margin-bottom: 2px;
+}
+
+img.imagem-principal {
+    border: 3px solid #DFDFDF;
+    width: 98%;
+}
+
+.lista-noticias li {
+    padding: 2px;
+    height: 62px;
+    border-bottom: 1px solid #ccc;
+}
+
+.lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+.lista-noticias li a {
+    text-decoration: none;
+}
+
+.lista-noticias li a h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #3E7AB9;
+    padding: 0;
+}
+
+.lista-noticias  li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+.lista-noticias li:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+#lateral ul a {
+    display: block;
+    padding: 3px;
+    line-height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000;
+}
+
+#lateral ul a:hover {
+    padding-left: 20px;
+    color: #a1a1a1;
+    background: #F9F9F9 url(../imagens/marcador.png) no-repeat left center;
+}
+
+#lateral label {
+    display: block;
+    cursor: pointer;
+}
+
+#lateral input[type="email"]{
+    width: 125px;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 0.9em;
+    
+}
+
+#lateral input[type="submit"] {
+    width: 80px;
+    padding: 5px;
+    color: white;
+    font-size: 0.9em;
+    background-color: #b10333;
+    border: 2px solid #870529;
 }
 
 #rodape {
